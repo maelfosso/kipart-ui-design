@@ -89,6 +89,10 @@ main#terms > .content {
   padding: 5em 0;
   width: 75%;
   margin: auto;
+
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 main#terms > .content p {
@@ -109,8 +113,6 @@ footer {
 
 footer a {
   cursor: pointer;
-  /* width: 75%; */
-  /* margin: auto; */
 }
 
 footer article:first-child {
@@ -120,7 +122,7 @@ footer article:first-child {
 footer article:first-child > .content {
   width: 75%;
   margin: auto;
-  padding: 5em 0;
+  padding: 4em 0;
 
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
