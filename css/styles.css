@@ -57,7 +57,8 @@ header nav ul li {
   color: #C98010;
 }
 
-main#terms header {
+main#terms header,
+main#privacy-policy header {
   color: white;
 
   height: 540px;
@@ -69,7 +70,8 @@ main#terms header {
   background-repeat: no-repeat;
 }
 
-main#terms > header .content {
+main#terms > header .content,
+main#privacy-policy > header .content {
   margin: auto;
   width: 75%;
 
@@ -78,14 +80,16 @@ main#terms > header .content {
   align-items: center;
 }
 
-main#terms > header h1 {
+main#terms > header h1,
+main#privacy-policy > header h1 {
   width: 25%;
   font-size: 64px;
   color: #FFFFFF;
   line-height: 77px;
 }
 
-main#terms > .content {
+main#terms > .content,
+main#privacy-policy > .content {
   padding: 5em 0;
   width: 75%;
   margin: auto;
@@ -95,13 +99,15 @@ main#terms > .content {
   flex-direction: column;
 }
 
-main#terms > .content p {
+main#terms > .content p,
+main#privacy-policy > .content p {
   font-size: 30px;
   line-height: 48px;
   text-align: justify;
 }
 
-main#terms > .content p.title {
+main#terms > .content p.title,
+main#privacy-policy > .content p.title {
   color: #C98010;
 }
 
