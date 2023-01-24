@@ -57,60 +57,7 @@ header nav ul li {
   color: #C98010;
 }
 
-main#terms header,
-main#privacy-policy header {
-  color: white;
-
-  height: 540px;
-
-  background-image: url('../images/bg-header.png');
-  background-size: cover;
-  background-position: center;
-  background-color: white;
-  background-repeat: no-repeat;
-}
-
-main#terms > header .content,
-main#privacy-policy > header .content {
-  margin: auto;
-  width: 75%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-main#terms > header h1,
-main#privacy-policy > header h1 {
-  width: 25%;
-  font-size: 64px;
-  color: #FFFFFF;
-  line-height: 77px;
-}
-
-main#terms > .content,
-main#privacy-policy > .content {
-  padding: 5em 0;
-  width: 75%;
-  margin: auto;
-
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
-main#terms > .content p,
-main#privacy-policy > .content p {
-  font-size: 30px;
-  line-height: 48px;
-  text-align: justify;
-}
-
-main#terms > .content p.title,
-main#privacy-policy > .content p.title {
-  color: #C98010;
-}
-
+/* GLOBAL FOOTER */
 footer {
   font-size: 20px;
   line-height: 36px;
@@ -268,4 +215,59 @@ footer article:last-child > .content > div:nth-child(4) {
   grid-column-start: 4;
   grid-column-end: 6;
   margin-left: auto;
+}
+
+/* TERMS & PRIVACY POLICY */
+main#terms header,
+main#privacy-policy header {
+  color: white;
+
+  height: 540px;
+
+  background-image: url('../images/bg-header.png');
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+main#terms > header .content,
+main#privacy-policy > header .content {
+  margin: auto;
+  width: 75%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+main#terms > header h1,
+main#privacy-policy > header h1 {
+  width: 25%;
+  font-size: 64px;
+  color: #FFFFFF;
+  line-height: 77px;
+}
+
+main#terms > .content,
+main#privacy-policy > .content {
+  padding: 5em 0;
+  width: 75%;
+  margin: auto;
+
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main#terms > .content p,
+main#privacy-policy > .content p {
+  font-size: 30px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+main#terms > .content p.title,
+main#privacy-policy > .content p.title {
+  color: #C98010;
 }
