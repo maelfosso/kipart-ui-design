@@ -202,18 +202,17 @@
 
     <div
       id="login"
-      class="dialog-containe"
-      aria-labelledby="your-dialog-title-id"
+      class="dialog-container"
       aria-hidden="true"
     >
       <!-- 2. The dialog overlay -->
-      <!-- <div class="dialog-overlay" data-a11y-dialog-hide></div> -->
+      <div class="dialog-overlay" data-a11y-dialog-hide></div>
       <!-- 3. The actual dialog -->
       <div class="dialog-content" role="document">
         <!-- 4. The close button -->
-        <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+        <!-- <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
           &times;
-        </button>
+        </button> -->
         <!-- 5. The dialog title -->
         <!-- <h1 id="your-dialog-title-id">Your dialog title</h1> -->
         <!-- 6. Dialog content -->
@@ -257,18 +256,17 @@
     </div>
     <div
       id="register"
-      class="dialog-containe"
-      aria-labelledby="your-dialog-title-id"
+      class="dialog-container"
       aria-hidden="true"
     >
       <!-- 2. The dialog overlay -->
-      <!-- <div class="dialog-overlay" data-a11y-dialog-hide></div> -->
+      <div class="dialog-overlay" data-a11y-dialog-hide></div>
       <!-- 3. The actual dialog -->
       <div class="dialog-content" role="document">
         <!-- 4. The close button -->
-        <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
+        <!-- <button type="button" data-a11y-dialog-hide aria-label="Close dialog">
           &times;
-        </button>
+        </button> -->
         <!-- 5. The dialog title -->
         <!-- <h1 id="your-dialog-title-id">Your dialog title</h1> -->
         <!-- 6. Dialog content -->
@@ -306,20 +304,17 @@
         </div>
       </div>
     </div>
-    
 
-    <div id="register">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.min.js"></script>
+    <script type="module">
+      import A11yDialog from 'https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.esm.min.js'
 
-    </div>
-    <script type="text/javascript">
       function increaseNumberOfPassengers() {
         var numberOfPassengers = document.getElementById("number-of-passengers");
         numberOfPassengers.value = +numberOfPassengers.value + 1;
       }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/a11y-dialog@7/dist/a11y-dialog.min.js"></script>
-    <script>
+
       const containerLogin = document.querySelector('#login');
       const dialogLogin = new A11yDialog(containerLogin);
       dialogLogin.on('show', function (dialogEl, event) {
@@ -327,7 +322,7 @@
         console.log(event);
       });
 
-      const containerRegister = document.querySelector('#login');
+      const containerRegister = document.querySelector('#register');
       const dialogRegister = new A11yDialog(containerRegister);
       dialogRegister.on('show', function (dialogEl, event) {
         console.log(dialogEl);

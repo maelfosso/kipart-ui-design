@@ -175,7 +175,7 @@ img {
   margin: auto; /* 1 */
   z-index: 4000; /* 2 */
   position: relative; /* 2 */
-  background-color: white; /* 3 */
+  /* background-color: white; 3 */
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -1315,6 +1315,12 @@ main#departures #details > .content #all-departures .items .item .footer a {
 #register .content {
   display: flex;
   flex-direction: row;
+  width: 75%;
+}
+
+#login .content .details,
+#register .content .details {
+  background-color: #FFFFFF;
 }
 
 #login .content .details form,
@@ -1451,9 +1457,9 @@ main#departures #details > .content #all-departures .items .item .footer a {
 
 #login .content .advert > div,
 #register .content .advert > div {
-  /* width: 70%; */
-  width: 40%;
+  width: 50%;
   margin: 1em auto;
+  text-align: center;
 }
 
 /* CHOICE OF SEATS */
