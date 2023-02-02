@@ -1581,6 +1581,7 @@ main#seats #details > .content > #travel #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
+  row-gap: 1em;
 }
 
 main#seats #details > .content > #travel #choosen > div.infos > div.towns {
@@ -1590,6 +1591,7 @@ main#seats #details > .content > #travel #choosen > div.infos > div.towns {
   grid-row-end: 2;
 
   font-size: 23px;
+  font-weight: bold;
   line-height: 20px;
   color: #4D4D4D;
 }
@@ -1612,6 +1614,7 @@ main#seats #details > .content > #travel #choosen > div.infos > div.agency {
   grid-row-end: 4;
 
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
   color: #808080;
 }
@@ -1623,6 +1626,7 @@ main#seats #details > .content > #travel #choosen > div.infos > div.hour {
   grid-row-end: 3;
 
   font-size: 45px;
+  font-weight: bold;
   line-height: 54px;
   color: #C98010;
   text-align: right;
@@ -1635,6 +1639,7 @@ main#seats #details > .content > #travel #choosen > div.infos > div.class {
   grid-row-end: 4;
 
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
   color: #808080;
   text-align: right;
@@ -1833,6 +1838,7 @@ main#passenger-data #details > .content > #travel #ticket > div:last-of-type {
 main#passenger-data #details > .content > #travel #choosen > div:first-of-type {
   color: #C98010;
   font-size: 29px;
+  font-weight: bold;
   line-height: 35px;
   text-transform: uppercase;
   margin-bottom: 0.5em;
@@ -1842,6 +1848,7 @@ main#passenger-data #details > .content > #travel #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
+  row-gap: 1em;
 }
 
 main#passenger-data #details > .content > #travel #choosen > div.infos > div.towns {
@@ -1851,6 +1858,7 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.tow
   grid-row-end: 2;
 
   font-size: 23px;
+  font-weight: bold;
   line-height: 20px;
   color: #4D4D4D;
 }
@@ -1873,6 +1881,7 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.age
   grid-row-end: 4;
 
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
   color: #808080;
 }
@@ -1884,6 +1893,7 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.hou
   grid-row-end: 3;
 
   font-size: 45px;
+  font-weight: bold;
   line-height: 54px;
   color: #C98010;
   text-align: right;
@@ -1896,6 +1906,7 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.cla
   grid-row-end: 4;
 
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
   color: #808080;
   text-align: right;
@@ -2109,6 +2120,7 @@ main#resume #details > .content > div:first-of-type > #method-payment > div:firs
 main#resume #details > .content > div:first-of-type > #coords > div:first-of-type > div:first-of-type {
   color: #808080;
   font-size: 20px;
+  font-weight: bold;
   line-height: 24px;
 }
 
@@ -2138,6 +2150,7 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
+  row-gap: 1em;
 }
 
 main#resume #details > .content > div:first-of-type > #choosen > div.infos > div.towns {
@@ -2147,6 +2160,7 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-end: 2;
 
   font-size: 23px;
+  font-weight: bold;
   line-height: 20px;
   color: #4D4D4D;
 }
@@ -2169,6 +2183,7 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-end: 4;
 
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
   color: #808080;
 }
@@ -2180,6 +2195,7 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-end: 3;
 
   font-size: 45px;
+  font-weight: bold;
   line-height: 54px;
   color: #C98010;
   text-align: right;
@@ -2192,6 +2208,7 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-end: 4;
 
   font-size: 17px;
+  font-weight: bold;
   line-height: 20px;
   color: #808080;
   text-align: right;
@@ -2207,12 +2224,16 @@ main#resume #details > .content > div:first-of-type > #choosen {
   padding: 1em 2em;
   border-radius: 1em;
   border: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 main#resume #details > .content > div:first-of-type > #coords > div:last-of-type {
   display: flex;
   flex-direction: column;
-  gap: 0.25em;
+  gap: 0.5em;
 
   font-weight: bold;
   font-size: 23px;
@@ -2290,3 +2311,382 @@ main#resume #details > .content > div:first-of-type > #actions button {
   background-image: linear-gradient(#C98018, #C98018);
 }
 
+main#resume #details > .content > div:first-of-type > #actions p {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+/* RESUME AND PAYMENT - 2 */
+
+main#resume-2 #breadcumb {
+  background-color: #C98010;
+}
+
+main#resume-2 #breadcumb > .content {
+  width: 75%;
+  margin: auto;
+  padding: 1em 0;
+}
+
+main#resume-2 #breadcumb > .content ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+main#resume-2 #breadcumb > .content ul li {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 15px;
+}
+
+main#resume-2 #breadcumb > .content ul li img {
+  filter: invert(99%) sepia(0%) saturate(7432%) hue-rotate(179deg) brightness(121%) contrast(98%);
+}
+
+main#resume-2 #details {
+  background-color: #FFFFFF;
+}
+
+main#resume-2 #details > .content {
+  width: 75%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+
+  padding: 2em 0;
+}
+
+main#resume-2 #details > .content > div.recap {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+main#resume-2 #details > .content > div.recap > #ticket {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #808080;
+}
+
+main#resume-2 #details > .content > div.recap > #ticket > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main#resume-2 #details > .content > div.recap > #ticket > div:last-of-type {
+  color: #4D4D4D;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+main#resume-2 #details > .content > div.recap > #coords > div:first-of-type,
+main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+main#resume-2 #details > .content > div.recap > #reduction > div:first-of-type,
+main#resume-2 #details > .content > div.recap > #method-payment > div:first-of-type,
+main#resume-2 #details > .content > div.recap > #method-payment > div:first-of-type,
+main#resume-2 #details > .content > div.recap > #coords > div:first-of-type > div:first-of-type {
+  color: #808080;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type > div:first-of-type {
+  color: #C98010;
+  font-size: 29px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+main#resume-2 #details > .content > div.recap > #coords > div:first-of-type a,
+main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type a {
+  color: #C98010;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+main#resume-2 #details > .content > div.recap > #coords > div:first-of-type img,
+main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type img {
+  filter: invert(49%) sepia(99%) saturate(432%) hue-rotate(357deg) brightness(91%) contrast(91%);
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div.infos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 1em;
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.towns {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #4D4D4D;
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.date-seats {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  font-size: 23px;
+  line-height: 28px;
+  color: #808080;
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.agency {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #808080;
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.hour {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 54px;
+  color: #C98010;
+  text-align: right;
+}
+
+main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.class {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #808080;
+  text-align: right;
+}
+
+main#resume-2 #details > .content > div.recap > #coords,
+main#resume-2 #details > .content > div.recap > #actions,
+main#resume-2 #details > .content > div.recap > #method-payment,
+main#resume-2 #details > .content > div.recap > #reduction,
+main#resume-2 #details > .content > div.recap > #ticket,
+main#resume-2 #details > .content > div.recap > #choosen {
+  background-color: #E5E5E5;
+  padding: 1em 2em;
+  border-radius: 1em;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+main#resume-2 #details > .content > div.recap > #coords > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+
+  font-weight: bold;
+  font-size: 23px;
+  line-height: 28px;
+  color: #4D4D4D;
+}
+
+main#resume-2 #details > .content > div.recap > #reduction,
+main#resume-2 #details > .content > div.recap > #actions,
+main#resume-2 #details > .content > div.recap > #method-payment {
+  background: none;
+  border: 1px solid #B2B2B2;
+}
+
+main#resume-2 #details > .content > div.recap > #reduction > div:first-of-type,
+main#resume-2 #details > .content > div.recap > #method-payment > div:first-of-type {
+  margin-bottom: 0.5em;
+}
+
+main#resume-2 #details > .content > div.recap > #reduction > div:last-of-type form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main#resume-2 #details > .content > div.recap > #reduction > div:last-of-type form .input input {
+  border-radius: 1em;
+  border: 1px solid #808080;
+  outline: none;
+  padding-right: 3em;
+  padding-left: 1em;
+  background-color: #E5E5E5;
+  padding: 1.5em;
+  font-size: 21px;
+  line-height: 26px;
+  color: #B2B2B2;
+  width: 100%;
+}
+
+main#resume-2 #details > .content > div.recap > #reduction > div:last-of-type form button {
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  padding-right: 3em;
+  padding-left: 1em;
+  background-color: #666666;
+  padding: 1.5em 4em;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+main#resume-2 #details > .content > div.recap > #actions {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  color: #666666;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+main#resume-2 #details > .content > div.recap > #actions button {
+  width: 80%;
+  padding: 1.5em;
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 15px;
+  color: #FFFFFF;
+  border: none;
+  background-image: linear-gradient(#C98018, #C98018);
+}
+
+main#resume-2 #details > .content > div.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  flex: 60%;
+}
+
+main#resume-2 #details > .content > div.card header {
+  background: linear-gradient(#C98018, #C98010);
+  border: none;
+  border-radius: 2em;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 1em;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 76px;
+  height: 400px;
+}
+
+main#resume-2 #details > .content > div.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: #808080;
+}
+
+main#resume-2 #details > .content > div.card form fieldset {
+  border: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+main#resume-2 #details > .content > div.card form fieldset .input {
+  position: relative;
+}
+
+main#resume-2 #details > .content > div.card form fieldset .input input {
+  border-radius: 1em;
+  border: none;
+  outline: none;
+  padding-right: 3em;
+  padding-left: 1em;
+
+  background-color: #E5E5E5;
+  padding: 1.5em;
+
+  font-size: 21px;
+  line-height: 26px;
+
+  color: #B2B2B2;
+
+  width: 100%;
+}
+
+main#resume-2 #details > .content > div.card form fieldset .group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+main#resume-2 #details > .content > div.card form fieldset .group .input {
+  flex: 50%;
+}
+
+main#resume-2 #details > .content > div.card form .actions {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+main#resume-2 #details > .content > div.card form .actions button {
+  padding: 1em 2em;
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: 48px;
+  border: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(#C98018, #C98010);
+}
+
+main#resume-2 #details > .content > div.card form .actions button span {
+  color: #000000;
+}
