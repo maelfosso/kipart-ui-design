@@ -2690,3 +2690,252 @@ main#resume-2 #details > .content > div.card form .actions button {
 main#resume-2 #details > .content > div.card form .actions button span {
   color: #000000;
 }
+
+/* TICKET DETAILS */
+main#details-ticket {
+  background-color: #F2F2F2;
+  padding: 2em 0;
+}
+
+main#details-ticket > .content {
+  width: 60%;
+  margin: auto;
+}
+
+main#details-ticket > .content > .ticket {
+  position: relative;
+  /* background-image: url("../images/bg-tickets.svg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  /* background-color: #C98010; */
+  width: fit-content;
+  height: 128%;
+  margin: auto;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+main#details-ticket > .content > .ticket > img.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+main#details-ticket > .content > .ticket > img.divider {
+  width: 87%;
+  position: absolute;
+  top: 34.5%;
+  left: 7%;
+}
+
+main#details-ticket > .content > .ticket >  .title {
+  background: linear-gradient(#C98018, #C98010);
+  border-top-left-radius: 1.9em;
+  border-top-right-radius: 1.9em;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 43px;
+  font-weight: bolder;
+  line-height: 66px;
+  margin: 2px;
+}
+
+main#details-ticket > .content > .ticket >  .infos {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1em; */
+}
+
+main#details-ticket > .content > .ticket >  .infos .name {
+  padding: 0 2em;
+  font-size: 58px;
+  font-weight: bolder;
+  line-height: 88px;
+  color: #C98010;
+  text-align: center;
+}
+
+main#details-ticket > .content > .ticket >  .infos .others {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  width: 80%;
+  margin: auto;
+  font-weight: bold;
+}
+
+main#details-ticket > .content > .ticket >  .infos .others > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+
+  color: #4D4D4D;
+}
+
+main#details-ticket > .content > .ticket >  .infos .others .personal {
+  font-size: 25px;
+  line-height: 31px;
+}
+
+main#details-ticket > .content > .ticket >  .infos .others .amount {
+  font-size: 27px;
+  line-height: 33px;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel {
+  display: flex;
+  flex-direction: column;
+  /* gap: 0.5em; */
+  width: 80%;
+  margin: auto;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main#details-ticket > .content > .ticket > .infos .travel > div:first-of-type {
+  /* width: 80%;
+  margin: auto; */
+  position: relative;
+}
+
+main#details-ticket > .content > .ticket > .infos .travel > div:first-of-type div {
+  z-index: 10;
+  background-color: #FFFFFF;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div > img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div hr {
+  width: 100%;
+  /* height: 2px;
+  border: 0; */
+  border-bottom: 2px solid #B2B2B2;
+}
+/* 
+main#details-ticket > .content > .ticket >  .infos .travel > div:first-of-type > div {
+  position: relative;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div:first-of-type > div:before,
+main#details-ticket > .content > .ticket >  .infos .travel > div:first-of-type > div:after
+{
+  content:'';
+  width:5em;
+  border-bottom:1px solid;
+  position:absolute;
+  top:50%;
+} */
+
+main#details-ticket > .content > .ticket >  .infos .travel > div img {
+  filter: invert(68%) sepia(10%) saturate(0%) hue-rotate(228deg) brightness(102%) contrast(92%);
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div > div:nth-last-of-type(3) img {
+  width: 40px;
+  height: 40px;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div > div:nth-last-of-type(2) img {
+  width: 126px;
+  height: 40px;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div > div:nth-last-of-type(1) img {
+  width: 40px;
+  height: 55px;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div:last-of-type {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #828282;
+}
+
+main#details-ticket > .content > .ticket >  .infos .travel > div:last-of-type > div:nth-child(2) {
+  color: #4D4D4D;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+main#details-ticket > .content > .ticket >  .scan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 2em 2em 2em;
+  margin-top: auto;
+}
+
+main#details-ticket > .content > .ticket >  .scan .qr-code {
+  height: 500px;
+  width: 500px;
+  background-color: #000000;
+}
+
+main#details-ticket > .content > .ticket >  .scan .cat {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #808080;
+}
+
+main#details-ticket > .content > .ticket >  .scan .agency {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+main#details-ticket > .content > .ticket >  .scan .agency .logo {
+  width: 85px;
+  height: 85px;
+  border-radius: 2em;
+  background: linear-gradient(#C98018, #C98010);
+
+  color: #FFFFFF;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+main#details-ticket > .content > .ticket >  .scan .agency .name {
+  color: #000000;
+}
+
+main#details-ticket > .content > .actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2em;
+}
