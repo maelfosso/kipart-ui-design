@@ -201,10 +201,15 @@ header nav {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 
   height: auto;
   padding: 1em 0;
   background-color: white;
+}
+
+header nav #menu-toggle-primary {
+  display: none;
 }
 
 header nav .logo img {
@@ -213,7 +218,6 @@ header nav .logo img {
 }
 
 header nav ul {
-  margin-left: auto;
   list-style: none;
 
   display: flex;
