@@ -303,3 +303,77 @@
     width: 90%;
   }
 }
+
+/* INFORMATIONS ABOUT PASSENGERS */
+@media screen and (max-width: 1280px) {
+  main#passenger-data #details > .content,
+  main#passenger-data #breadcumb > .content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main#passenger-data #details > .content > #informations form .actions {
+    width: 100%;
+    gap: 0;
+  }
+
+  main#passenger-data #details > .content > #informations form .actions > div:first-of-type {
+    margin: 1em 0;
+  }
+
+  main#passenger-data #details > .content > #informations form .actions button {
+    width: 100%;
+  }
+
+  main#passenger-data #details > .content > #travel #ticket,
+  main#passenger-data #details > .content > #travel #choosen {
+    padding: 1em;
+  }
+
+  main#passenger-data #details > .content > #travel #choosen > div.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  main#passenger-data #breadcumb > .content ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main#passenger-data #breadcumb > .content ul li img {
+    display: none;
+  }
+
+  main#passenger-data #details > .content,
+  main#passenger-data #breadcumb > .content {
+    flex-direction: column-reverse;
+  }
+
+  main#passenger-data #details > .content > #travel,
+  main#passenger-data #details > .content > #informations {
+    width: 100%;
+  }
+}
+
+/* RESUME AND PAYMENT */
+@media screen and (max-width: 1280px) {
+  /* main#passenger-data #details > .content,
+  main#passenger-data #breadcumb > .content {
+    width: 90%;
+  } */
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 465px) {
+  
+  
+}
