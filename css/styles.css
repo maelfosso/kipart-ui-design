@@ -1699,6 +1699,7 @@ main#seats #details > .content > #seat-selection .rank {
   grid-template-rows: auto;
   column-gap: 1em;
   row-gap: 2em;
+  margin: auto;
 }
 
 main#seats #details > .content > #seat-selection .place {

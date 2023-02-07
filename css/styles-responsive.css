@@ -52,6 +52,12 @@
   }
 }
 
+@media screen and (max-width: 1280px) {
+  header nav {
+    width: 90%;
+  }
+}
+
 /* FOOTER */
 @media screen and (max-width: 768px) {
   footer article:first-child > .content,
@@ -206,5 +212,94 @@
 
   main#homepage #hero > .content {
     gap: 1em;
+  }
+}
+
+/* CHOICE OF SEATS */
+@media screen and (max-width: 465px) {
+
+  main#seats #breadcumb > .content ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main#seats #breadcumb > .content ul li img {
+    display: none;
+  }
+
+  main#seats #details > .content > #seat-selection .place {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  main#seats #details > .content > #seat-selection .legend > div {
+    gap: 10px;
+    text-align: center;
+  }
+
+  main#seats #details > .content > #seat-selection .legend > div span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  main#seats #details > .content > #seat-selection .rank {
+    row-gap: 1em;
+    column-gap: 0.5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  main#seats #details > .content {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+
+  main#seats #details > .content > #seat-selection {
+    flex-grow: 1;
+    width: 100%
+  }
+
+  main#seats #details > .content > #travel {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  main#seats #details > .content > #seat-selection > div:first-of-type > .selections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  main#seats #details > .content > #seat-selection .legend {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+  }
+
+  main#seats #details > .content > #seat-selection .rank {
+    row-gap: 2em;
+    column-gap: 2em;
+  }
+
+  main#seats #details > .content > #seat-selection .nav {
+    width: 100%;
+  }
+
+  main#seats #details > .content > #seat-selection > div:first-of-type,
+  main#seats #details > .content > #travel #ticket,
+  main#seats #details > .content > #travel #choosen {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main#seats #details > .content,
+  main#seats #breadcumb > .content {
+    width: 90%;
   }
 }
