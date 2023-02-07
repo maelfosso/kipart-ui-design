@@ -363,17 +363,123 @@
 
 /* RESUME AND PAYMENT */
 @media screen and (max-width: 1280px) {
-  /* main#passenger-data #details > .content,
-  main#passenger-data #breadcumb > .content {
+  main#resume #details > .content,
+  main#resume #breadcumb > .content {
     width: 90%;
-  } */
+  }
 }
 
 @media screen and (max-width: 1024px) {
-  
+  main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form > div {
+    width: 100%;
+  }
+
+  main#resume #details > .content > div:first-of-type > #actions {
+    padding: 0 !important;
+  }
+
+  main#resume #details > .content > div:first-of-type > #actions button {
+    width: 100%;
+  }
+
+  main#resume #details > .content > div:first-of-type > #coords,
+  main#resume #details > .content > div:first-of-type > #actions,
+  main#resume #details > .content > div:first-of-type > #method-payment,
+  main#resume #details > .content > div:first-of-type > #reduction,
+  main#resume #details > .content > div:first-of-type > #ticket,
+  main#resume #details > .content > div:first-of-type > #choosen {
+    padding: 1em;
+  }
 }
 
-@media screen and (max-width: 465px) {
-  
-  
+@media screen and (max-width: 640px) {
+  main#resume #breadcumb > .content ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main#resume #breadcumb > .content ul li img {
+    display: none;
+  }
+
+  main#resume #details > .content > div:last-of-type {
+    display: none;
+  }
+
+  main#resume #details > .content > div:first-of-type {
+    width: 100%;
+  }
+
+  main#resume #details > .content > div:first-of-type > #choosen > div.infos {
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+}
+
+/* RESUME AND PAYMENT - 2 */
+@media screen and (max-width: 1280px) {
+  main#resume-2 #details > .content,
+  main#resume-2 #breadcumb > .content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main#resume-2 #details > .content, main#resume-2 #breadcumb > .content {
+    flex-direction: column-reverse;
+  }
+
+  main#resume-2 #details > .content > div.recap > #coords,
+  main#resume-2 #details > .content > div.recap > #actions,
+  main#resume-2 #details > .content > div.recap > #method-payment,
+  main#resume-2 #details > .content > div.recap > #reduction,
+  main#resume-2 #details > .content > div.recap > #ticket,
+  main#resume-2 #details > .content > div.recap > #choosen {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main#resume-2 #breadcumb > .content ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main#resume-2 #breadcumb > .content ul li img {
+    display: none;
+  }
+
+  main#resume-2 #details > .content > div.recap > #choosen > div.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main#resume-2 #details > .content > div.card header {
+    text-align: center;
+    line-height: 38px;
+  }
+
+  main#resume-2 #details > .content > div.card form fieldset .group {
+    flex-direction: column;
+  }
+
+  main#resume-2 #details > .content > div.card form .actions {
+    margin: 0;
+  }
+
+  main#resume-2 #details > .content > div.card form .actions button {
+    padding: 1em 0;
+    width: 100%;
+  }
 }
