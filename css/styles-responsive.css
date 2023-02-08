@@ -483,3 +483,141 @@
     width: 100%;
   }
 }
+
+/* DEPARTURES */
+@media screen and (max-width: 1280px) {
+  main#departures #search > .content,
+  main#departures #details > .content {
+    width: 90%;
+  }
+
+  main#departures #search > .content > form {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main#departures #details > .content #by-agencies .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main#departures #search > .content > form .input {
+    flex: 100%;
+  }
+
+  main#departures #search > .content > form .group .input button {
+    width: 100%;
+  }
+
+  main#departures #search > .content > form > .group div:last-of-type button span {
+    display: none;
+  }
+
+  main#departures #search > .content > form .actions {
+    width: 100%;
+  }
+
+  main#departures #search > .content > form .actions button[type="submit"] {
+    width: 100%;
+    padding: 1.5em;
+  }
+
+  main#departures #search > .content > form .input.left {
+    flex: 100%;
+  }
+
+  main#departures #details > .content {
+    flex-direction: column;
+  }
+
+  main#departures #details > .content > div {
+    width: 100% !important;
+  }
+
+  main#departures #details > .content #all-departures .items .item {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  main#departures #search > .content > form > .group {
+    width: 100%;
+  }
+
+  main#departures #search > .content > form .group > div select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  main#departures #search > .content > form {
+    flex-direction: column;
+  }
+
+  main#departures #search > .content > form .group > div select {
+    width: 100%;
+  }
+
+  main#departures #details > .content > div:last-of-type {
+    display: none;
+  }
+
+  main#departures #details > .content #by-agencies header {
+    padding: 0.5em 0;
+  }
+
+  main#departures #details > .content #all-departures .items .item {
+    flex-direction: column;
+    padding: 1em;
+    gap: 10px;
+  }
+
+  main#departures #details > .content #all-departures .items .item .infos {
+    gap: 10px;
+  }
+
+  main#departures #details > .content #all-departures .items .item .body {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  main#departures #details > .content #all-departures .items .item .body .others {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  main#departures #details > .content > div:first-of-type {
+    width: 100%;
+    gap: 10px;
+  }
+
+  main#departures #details > .content #all-departures header {
+    flex-direction: column;
+  }
+
+  main#departures #details > .content #all-departures .items .item .body .others > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  main#departures #details > .content #all-departures .items .item .body .hour {
+    text-align: center;
+  }
+
+  main#departures #details > .content #all-departures .items .item .footer {
+    flex-direction: column;
+    align-items: self-start;
+    gap: 0;
+  }
+}

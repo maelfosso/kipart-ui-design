@@ -1053,6 +1053,8 @@ main#departures #search > .content > form .group .input button {
 
 main#departures #search > .content > form .group .input button {
   color: #B2B2B2;
+  display: flex;
+  justify-content: space-around;
 }
 
 main#departures #search > .content > form .group .input button.no-bg {

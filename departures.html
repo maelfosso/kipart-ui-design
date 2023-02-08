@@ -1,19 +1,29 @@
 <html>
   <head>
     <title>KiPart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://kit.fontawesome.com/021511bd83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles-responsive.css" />
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="menu-primary">
         <div class="logo">
           <img src="./images/logo.svg" alt="logo">
         </div>
+        <div id="menu-toggle-primary">
+          <a class="open-menu-primary" href="#menu-primary">
+            <img src="images/icon-hamburger-menu.svg" alt="Open this menu" />
+          </a>
+          <a class="close-menu-primary" href="#">
+            <img src="images/icon-times.svg" alt="Close this menu" />
+          </a>
+        </div>
         <ul>
           <li>Vos réservations</li>
-          <li>S'identifier</li>
-          <li>Créer un compte</li>
+          <li><a href="#" data-a11y-dialog-show="login">S'identifier</a></li>
+          <li><a href="#" data-a11y-dialog-show="register">Créer un compte</a></li>
           <li>En</li>
         </ul>
       </nav>
@@ -39,7 +49,7 @@
                 <button type="button">
                   <!-- <span>+</span> -->
                   <img src="images/icon-plus.svg" alt="plus icon" />
-                  Ajouter un retour
+                  <span>Ajouter un retour</span>
                 </button>
               </div>
             </div>
