@@ -96,7 +96,17 @@
 }
 
 /* HOME  */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1280px) {
+  main#homepage #hero > .content,
+  main#homepage #agencies > .content,
+  main#homepage #app > .content,
+  main#homepage #newsletter > .content {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   main#homepage #hero {
     background-image: url(../images/bg-header.png);
     background-size: cover;
@@ -109,7 +119,6 @@
   }
 
   main#homepage #hero > .content {
-    width: 90%;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -125,6 +134,43 @@
     right: 0;
     bottom: 0;
   }
+
+  main#homepage #agencies > .content {
+    flex-direction: column;
+  }
+
+  main#homepage #agencies > .content article {
+    width: 100%;
+  }
+
+  main#homepage #agencies > .content > article:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main#homepage #app {
+    padding: 2em 0;
+  }
+
+  main#homepage #app > .content > article {
+    display: none;
+  }
+
+  main#homepage #app > .content > article:last-child {
+    margin-top: 0;
+  }
+
+  main#homepage #newsletter > .content {
+    padding: 2em 0;
+  }
+
+  main#homepage #newsletter > .content > form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
 
   main#homepage #agencies > .content {
     width: 90%;
@@ -189,6 +235,11 @@
   main#homepage #newsletter > .content {
     width: 90%;
     padding: 2em 0;
+  }
+
+  main#homepage #newsletter > .content > h2 {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   main#homepage #newsletter > .content > form {
