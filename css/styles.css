@@ -1156,11 +1156,10 @@ main#departures #details > .content #by-agencies header h6 {
 
 main#departures #details > .content #by-agencies .items {
   display: grid;
-  /* grid-template-columns: repeat(4, minmax(123px, 1fr)); */
+  grid-template-columns: repeat(4, minmax(123px, 1fr));
   grid-template-rows: repeat(2, 142px);
-  grid-template-columns: repeat(4, 123px);
-  row-gap: 3em;
-  column-gap: 16.5%;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
 }
 
 main#departures #details > .content #by-agencies .items .item {
@@ -1169,6 +1168,7 @@ main#departures #details > .content #by-agencies .items .item {
   justify-content: center;
   align-items: center;
   /* gap: 1em; */
+  flex: 25%;
 }
 
 main#departures #details > .content #by-agencies .items .item .logo {

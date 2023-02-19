@@ -625,7 +625,7 @@
 }
 
 /* DEPARTURES */
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1450px) {
   main#departures #search > .content,
   main#departures #details > .content {
     width: 90%;
@@ -634,15 +634,6 @@
   main#departures #search > .content > form {
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
-  main#departures #details > .content #by-agencies .items {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 1em;
-    column-gap: 1em;
   }
 }
 
