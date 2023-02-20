@@ -1334,13 +1334,38 @@ main#departures #details > .content #all-departures .items .item .footer a {
 #login .content,
 #register .content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  margin: auto;
   width: 75%;
+}
+
+#login .content > button,
+#register .content > button {
+  width: min-content;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#login .content > button img,
+#register .content > button img {
+  filter: invert(43%) sepia(98%) saturate(509%) hue-rotate(360deg) brightness(100%) contrast(89%);
+  width: 45px;
+  height: 45px;
+}
+
+#login .content > .dialog-content,
+#register .content > .dialog-content {
+  display: flex;
 }
 
 #login .content .details,
 #register .content .details {
   background-color: #FFFFFF;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 #login .content .details form,
