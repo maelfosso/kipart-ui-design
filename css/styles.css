@@ -70,14 +70,14 @@
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
   src: url('fonts/poppins/Poppins-SemiBold.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 700;
+  font-weight: 500;
   font-style: italic;
   src: url('fonts/poppins/Poppins-SemiBoldItalic.ttf');
 }
@@ -188,6 +188,17 @@ input[type=date]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
+header nav,
+footer article:first-child > .content,
+footer article:last-child > .content,
+main#homepage #hero > .content,
+main#homepage #agencies > .content,
+main#homepage #app > .content,
+main#homepage #newsletter > .content {
+  max-width: 1280px;
+  margin: auto;
+}
+
 /* GLOBAL HEADER */
 header {
   display: flex;
@@ -196,7 +207,7 @@ header {
 
 header nav {
   margin: auto;
-  width: 75%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;
@@ -226,8 +237,9 @@ header nav ul {
 }
 
 header nav ul li {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
   color: #C98010;
 }
 
@@ -246,10 +258,14 @@ footer article:first-child {
   background-color: #333333;
 }
 
-footer article:first-child > .content {
-  width: 75%;
+footer article:first-child > .content,
+footer article:last-child > .content {
+  width: 80%;
   margin: auto;
-  padding: 4em 0;
+}
+
+footer article:first-child > .content {
+   padding: 2em 0;
 
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -301,14 +317,15 @@ footer article:first-child > .content > div {
 }
 
 footer article:first-child > .content > div:first-child img {
-  width: 145px;
-  height: 145px;
+  width: 90px;
+  height: 90px;
 }
 
 footer article:first-child > .content ul li,
 footer article:first-child > .content > div > div  {
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
   color: #FFFFFF;
 }
 
@@ -342,10 +359,13 @@ footer article:last-child {
 }
 
 footer article:last-child > .content {
-  width: 75%;
-  margin: auto;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
+
   padding: 2em 0;
 
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -356,8 +376,8 @@ footer article:last-child > .content a {
 }
 
 footer article:last-child > .content > div:first-child img {
-  width: 120px;
-  height: 30px;
+  width: 75px;
+  height: 20px;
 }
 
 footer article:last-child > .content > div:last-child {
@@ -397,9 +417,15 @@ main#homepage #newsletter {
   background-color: #F2F2F2;
 }
 
+main#homepage #hero > .content,
+main#homepage #agencies > .content,
+main#homepage #app > .content,
 main#homepage #newsletter > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
+}
+
+main#homepage #newsletter > .content {
   padding: 5em 2em;
 
   display: flex;
@@ -408,9 +434,24 @@ main#homepage #newsletter > .content {
   gap: 3em;
 }
 
-main#homepage #newsletter > .content > h2 {
-  font-size: 50px;
-  line-height: 60px;
+main#homepage #newsletter > .content > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+main#homepage #newsletter > .content > header .section-title {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+main#homepage #newsletter > .content > header h2 {
+  font-size: 38px;
+  line-height: 45px;
+  letter-spacing: 0.15px;
+  font-weight: bolder;
   text-align: center;
 
   color: #C98010;
@@ -428,32 +469,37 @@ main#homepage #newsletter > .content > form {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  height: 90px;
-  width: 80%;
+  height: 60px;
+  width: 85%;
 }
 
 main#homepage #newsletter > .content > form > .input {
   position: relative;
-  flex-grow: 3;
+  flex: 70%;
 }
 
 main#homepage #newsletter > .content > form > .input > img {
-  height: 25px;
-  width: 45px;
+  height: 15px;
+  width: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
   
   position: absolute;
   left: 1em;
-  top: 33px;
   z-index: 1000;
 }
 
 main#homepage #newsletter > .content > form > .input input {
-  padding-left: 3em;
+  padding-left: 4em;
 
   position: relative;
   background-color: #999999;
 
-  font-size: 21px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 500;
   color: #FFFFFF;
 
   height: 100%;
@@ -469,10 +515,14 @@ main#homepage #newsletter > .content > form > .input input::placeholder { /* Chr
 }
 
 main#homepage #newsletter > .content > form > button {
+  flex: 30%;
+
   background-color: #C98010;
   color: #FFFFFF;
 
-  font-size: 30px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
   flex-grow: 1;
 
   border-radius: 1em;
@@ -485,9 +535,6 @@ main#homepage #agencies {
 }
 
 main#homepage #agencies > .content {
-  width: 75%;
-  margin: auto;
-
   display: flex;
   flex-direction: row;
   gap: 5em;
@@ -505,14 +552,16 @@ main#homepage #agencies > .content > article:first-child {
 }
 
 main#homepage #agencies > .content > article:first-child > h2 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
   color: #C98010;
 }
 
 main#homepage #agencies > .content > article:first-child > p {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 500;
   color: #666666;
   text-align: justify;
 }
@@ -525,13 +574,16 @@ main#homepage #agencies > .content > article:last-child {
 
 main#homepage #agencies > .content > article:last-child div.agency-item {
   background-color: #989898;
-  width: 123px;
-  height: 123px;
+  width: 75px;
+  height: 75px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
 
-  font-size: 22px;
   text-align: center;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 
   border-radius: 1em;
   color: #FFFFFF;
@@ -606,9 +658,6 @@ main#homepage #app {
 }
 
 main#homepage #app > .content {
-  width: 75%;
-  margin: auto;
-
   display: flex;
   flex-direction: row;
   gap: 2em;
@@ -632,18 +681,20 @@ main#homepage #app > .content > article:last-child {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 5em;
+  gap: 1em;
 }
 
 main#homepage #app > .content > article:last-child h2 {
-  font-size: 50px;
-  line-height: 60px;
+  font-size: 35px;
+  line-height: 36px;
+  font-weight: bolder;
   color: #C98010;
 }
 
 main#homepage #app > .content > article:last-child p {
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 main#homepage #app > .content > article:last-child div {
@@ -655,9 +706,17 @@ main#homepage #app > .content > article:last-child div {
 
 main#homepage #app > .content > article:last-child div ul {
   list-style: none;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 main#homepage #app > .content > article:last-child div ul:first-child li {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -674,12 +733,9 @@ main#homepage #hero {
 }
 
 main#homepage #hero > .content {
-  width: 75%;
   padding: 5em 0;
-  margin: auto;
-
   display: flex;
-  gap: 5em;
+  gap: 3em;
 
   position: relative;
 }
@@ -688,23 +744,26 @@ main#homepage #hero > .content .overlay {
   background-image: url(../images/bg-header.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-  border-radius: 7em;
+  background-position: center;
+  border-radius: 3em;
   z-index: 0;
   position: absolute;
-  width: 75%;
-  height: 94%;
-  top: 1em;
-  right: 0.5em;
-  bottom: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80%;
+  height: 90%;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 main#homepage #hero > .content article {
-  flex-grow: 1;
+  flex: 50%;
   z-index: 1000;
 }
 
 main#homepage #hero > .content article:last-of-type {
+  flex: 50%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -713,11 +772,11 @@ main#homepage #hero > .content article:last-of-type {
 }
 
 main#homepage #hero > .content article:last-of-type .title {
-  font-size: 70px;
+  font-size: 55px;
 }
 
 main#homepage #hero > .content article:last-of-type .subtitle {
-  font-size: 45px;
+  font-size: 30px;
 }
 
 main#homepage #hero > .content article:first-of-type > form {
@@ -731,8 +790,14 @@ main#homepage #hero > .content article:first-of-type > form {
 }
 
 main#homepage #hero > .content article:first-of-type > form * {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 11px;
+}
+
+main#homepage #hero > .content article:first-of-type > form input,
+main#homepage #hero > .content article:first-of-type > form select {
+  height: 55px;
 }
 
 main#homepage #hero > .content article:first-of-type > form input,
@@ -743,9 +808,9 @@ main#homepage #hero > .content article:first-of-type > form select {
 main#homepage #hero > .content article:first-of-type > form label {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 3px;
 
-  color: #c98010;
+  color: #C98010;
 }
 
 main#homepage #hero > .content article:first-of-type > form label img {
@@ -759,12 +824,12 @@ main#homepage #hero > .content article:first-of-type > form .input {
 main#homepage #hero > .content article:first-of-type > form .input.right > :last-child {
   position: absolute;
   right: 1em;
-  top: 1em;
+  top: 0;
 }
 
 main#homepage #hero > .content article:first-of-type > form img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   filter: invert(80%) sepia(2%) saturate(3%) hue-rotate(323deg) brightness(88%) contrast(96%);
 }
 
@@ -792,12 +857,13 @@ main#homepage #hero > .content article:first-of-type > form input {
   border-radius: 1em;
   border: none;
   background-color: #E5E5E5;
-  padding: 1.5em;
+  padding: 1em;
 }
 
 main#homepage #hero > .content article:first-of-type > form input,
 main#homepage #hero > .content article:first-of-type > form .group .input button {
   width: 100%;
+  height: 55px;
 }
 
 main#homepage #hero > .content article:first-of-type > form > .group {
@@ -819,6 +885,7 @@ main#homepage #hero > .content article:first-of-type > form .group .input button
   cursor: pointer;
 
   display: flex;
+  align-items: center;
   gap: 0.5em;
 }
 
@@ -842,6 +909,7 @@ main#homepage #hero > .content article:first-of-type > form .group > div select 
 main#homepage #hero > .content article:first-of-type > form .group > div {
   display: flex;
   flex-direction: column;
+  flex: 50%;
 }
 
 main#homepage #hero > .content article:first-of-type > form .actions {
@@ -851,9 +919,11 @@ main#homepage #hero > .content article:first-of-type > form .actions {
 }
 
 main#homepage #hero > .content article:first-of-type > form .actions button[type="submit"] {
-  padding: 1.5em;
+  width: 60%;
+  padding: 1em;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 12px;
+  font-weight: bolder;
   line-height: 15px;
   color: #FFFFFF;
   border: none;
@@ -956,7 +1026,7 @@ main#departures #search > .content > form label {
   align-items: center;
   gap: 0.5em;
 
-  color: #c98010;
+  color: #C98010;
 }
 
 main#departures #search > .content > form label img {

@@ -52,15 +52,20 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
-  header nav {
-    width: 90%;
-  }
-}
-
 /* LOGIN, REGISTER */
 
 @media screen and (max-width: 1024px) {
+  #login .content > .dialog-content,
+  #register .content > .dialog-content {
+    flex-direction: column;
+  }
+
+  #login .content .details,
+  #register .content .details {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   #login .content, #register .content {
     flex-direction: column;
     width: 90%;
@@ -104,12 +109,6 @@
 }
 
 /* FOOTER */
-@media screen and (max-width: 1280px) {
-  footer article > .content,
-  footer article > .content {
-    width: 90% !important;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   footer article:first-child > .content,
@@ -185,15 +184,6 @@
 }
 
 /* HOME  */
-
-@media screen and (max-width: 1280px) {
-  main#homepage #hero > .content,
-  main#homepage #agencies > .content,
-  main#homepage #app > .content,
-  main#homepage #newsletter > .content {
-    width: 90%;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   main#homepage #hero {
