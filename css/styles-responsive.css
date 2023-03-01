@@ -427,20 +427,7 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
-  main#seats #details > .content,
-  main#seats #breadcumb > .content {
-    width: 90%;
-  }
-}
-
 /* INFORMATIONS ABOUT PASSENGERS */
-@media screen and (max-width: 1280px) {
-  main#passenger-data #details > .content,
-  main#passenger-data #breadcumb > .content {
-    width: 90%;
-  }
-}
 
 @media screen and (max-width: 1024px) {
   main#passenger-data #details > .content > #informations form .actions {
@@ -492,13 +479,6 @@
 }
 
 /* RESUME AND PAYMENT */
-@media screen and (max-width: 1280px) {
-  main#resume #details > .content,
-  main#resume #breadcumb > .content {
-    width: 90%;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form {
     flex-direction: column;
@@ -555,13 +535,6 @@
 }
 
 /* RESUME AND PAYMENT - 2 */
-@media screen and (max-width: 1280px) {
-  main#resume-2 #details > .content,
-  main#resume-2 #breadcumb > .content {
-    width: 90%;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   main#resume-2 #details > .content, main#resume-2 #breadcumb > .content {
     flex-direction: column-reverse;

@@ -14,28 +14,28 @@
 
 @font-face {
   font-family: "Poppins";
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
   src: url('fonts/poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
   src: url('fonts/poppins/Poppins-BoldItalic.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: bolder;
+  font-weight: 600er;
   font-style: normal;
   src: url('fonts/poppins/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: bolder;
+  font-weight: 600er;
   font-style: italic;
   src: url('fonts/poppins/Poppins-ExtraBoldItalic.ttf');
 }
@@ -58,28 +58,98 @@
   font-family: "Poppins";
   font-weight: 200;
   font-style: normal;
-  src: url('fonts/poppins/Poppins-Light.ttf');
+  src: url('fonts/poppins/Poppins-ExtraLight.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 200;
   font-style: italic;
+  src: url('fonts/poppins/Poppins-ExtraLightItalic.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: normal;
+  src: url('fonts/poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-style: italic;
   src: url('fonts/poppins/Poppins-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: italic;
+  src: url('fonts/poppins/Poppins-Italic.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 500;
   font-style: normal;
-  src: url('fonts/poppins/Poppins-SemiBold.ttf');
+  src: url('fonts/poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
   font-weight: 500;
   font-style: italic;
+  src: url('fonts/poppins/Poppins-MediumItalic.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  src: url('fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: italic;
   src: url('fonts/poppins/Poppins-SemiBoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: normal;
+  src: url('fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: italic;
+  src: url('fonts/poppins/Poppins-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: normal;
+  src: url('fonts/poppins/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: italic;
+  src: url('fonts/poppins/Poppins-ExtraBoldItalic.ttf');
 }
 
 html, body {
@@ -200,7 +270,16 @@ main#homepage #agencies > .content,
 main#homepage #app > .content,
 main#homepage #newsletter > .content,
 main#departures #search > .content,
-main#departures #details > .content {
+main#departures #details > .content,
+main#seats #details > .content,
+main #breadcumb > .content,
+main#passenger-data #details > .content,
+main#resume #details > .content,
+main#resume-2 #details > .content,
+main#terms > header .content,
+main#privacy-policy > header .content,
+main#terms > .content,
+main#privacy-policy > .content {
   max-width: 1280px;
   margin: auto;
 }
@@ -457,7 +536,7 @@ main#homepage #newsletter > .content > header h2 {
   font-size: 38px;
   line-height: 45px;
   letter-spacing: 0.15px;
-  font-weight: bolder;
+  font-weight: 600er;
   text-align: center;
 
   color: #C98010;
@@ -585,7 +664,7 @@ main#homepage #agencies > .content > article:last-child div.agency-item {
   height: 75px;
   font-size: 14px;
   line-height: 16px;
-  font-weight: bold;
+  font-weight: 600;
 
   text-align: center;
   display: flex;
@@ -694,7 +773,7 @@ main#homepage #app > .content > article:last-child {
 main#homepage #app > .content > article:last-child h2 {
   font-size: 35px;
   line-height: 36px;
-  font-weight: bolder;
+  font-weight: 600er;
   color: #C98010;
 }
 
@@ -930,7 +1009,7 @@ main#homepage #hero > .content article:first-of-type > form .actions button[type
   padding: 1em;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: bolder;
+  font-weight: 600er;
   line-height: 15px;
   color: #FFFFFF;
   border: none;
@@ -942,7 +1021,7 @@ main#terms header,
 main#privacy-policy header {
   color: white;
 
-  height: 540px;
+  height: 324px;
 
   background-image: url('../images/bg-header.png');
   background-size: cover;
@@ -954,7 +1033,7 @@ main#privacy-policy header {
 main#terms > header .content,
 main#privacy-policy > header .content {
   margin: auto;
-  width: 75%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;
@@ -964,15 +1043,16 @@ main#privacy-policy > header .content {
 main#terms > header h1,
 main#privacy-policy > header h1 {
   width: 25%;
-  font-size: 64px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 46px;
   color: #FFFFFF;
-  line-height: 77px;
 }
 
 main#terms > .content,
 main#privacy-policy > .content {
   padding: 5em 0;
-  width: 75%;
+  width: 80%;
   margin: auto;
 
   gap: 20px;
@@ -982,8 +1062,8 @@ main#privacy-policy > .content {
 
 main#terms > .content p,
 main#privacy-policy > .content p {
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 18px;
+  line-height: 28px;
   text-align: justify;
 }
 
@@ -1176,7 +1256,7 @@ main#departures #search > .content > form .actions button[type="submit"] {
   height: 100%;
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: bolder;
+  font-weight: 600er;
   line-height: 9px;
   color: #FFFFFF;
   border: none;
@@ -1239,7 +1319,7 @@ main#departures #details > .content #by-agencies header {
 
 }
 main#departures #details > .content #by-agencies header h6 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 11px;
   line-height: 13px;
   color: #808080;
@@ -1267,7 +1347,7 @@ main#departures #details > .content #by-agencies .items .item .logo {
   height: 75px;
   font-size: 14px;
   line-height: 16px;
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1297,7 +1377,7 @@ main#departures #details > .content #all-departures {
 main#departures #details > .content #all-departures header {
   margin-bottom: 2em;
 
-  font-weight: bold;
+  font-weight: 600;
   font-size: 11px;
   line-height: 13px;
   color: #808080;
@@ -1312,7 +1392,7 @@ main#departures #details > .content #all-departures header > div {
 }
 
 main#departures #details > .content #all-departures header h6 {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 11px;
   line-height: 13px;
 }
@@ -1367,13 +1447,13 @@ main#departures #details > .content #all-departures .items .item .price {
 
 main#departures #details > .content #all-departures .items .item .price span:first-of-type {
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 31px;
 }
 
 main#departures #details > .content #all-departures .items .item .price span:last-of-type {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 18px;
 }
 
@@ -1385,7 +1465,7 @@ main#departures #details > .content #all-departures .items .item .header > div:f
 
 main#departures #details > .content #all-departures .items .item .header .name {
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 19px;
   color: #C98010;
 }
@@ -1400,7 +1480,7 @@ main#departures #details > .content #all-departures .items .item .body {
 main#departures #details > .content #all-departures .items .item .body .hour {
   font-size: 27px;
   line-height: 32px;
-  font-weight: bold;
+  font-weight: 600;
   color: #C98010;
 }
 
@@ -1433,7 +1513,7 @@ main#departures #details > .content #all-departures .items .item .body .type-of-
 main#departures #details > .content #all-departures .items .item .body .class,
 main#departures #details > .content #all-departures .items .item .body .seats {
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 15px;
   color: #C98010;
 }
@@ -1636,17 +1716,17 @@ main#departures #details > .content #all-departures .items .item .footer a {
 
 /* CHOICE OF SEATS */
 
-main#seats #breadcumb {
+main #breadcumb {
   background-color: #C98010;
 }
 
-main#seats #breadcumb > .content {
-  width: 75%;
+main #breadcumb > .content {
+  width: 80%;
   margin: auto;
   padding: 1em 0;
 }
 
-main#seats #breadcumb > .content ul {
+main #breadcumb > .content ul {
   list-style: none;
 
   display: flex;
@@ -1655,14 +1735,17 @@ main#seats #breadcumb > .content ul {
   gap: 1em;
 }
 
-main#seats #breadcumb > .content ul li {
+main #breadcumb > .content ul li {
+  font-size: 13px;
+  line-height: 72px;
+  font-weight: 600;
   color: #FFFFFF;
-  font-size: 22px;
-  line-height: 15px;
 }
 
-main#seats #breadcumb > .content ul li img {
+main #breadcumb > .content ul li img {
   filter: invert(99%) sepia(0%) saturate(7432%) hue-rotate(179deg) brightness(121%) contrast(98%);
+  width: 10px;
+  height: 10px;
 }
 
 main#seats #details {
@@ -1670,7 +1753,7 @@ main#seats #details {
 }
 
 main#seats #details > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
 
   display: flex;
@@ -1704,8 +1787,8 @@ main#seats #details > .content > #travel {
 }
 
 main#seats #details > .content > #travel #more {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   color: #666666;
 }
 
@@ -1714,6 +1797,9 @@ main#seats #details > .content > #travel #ticket {
   flex-direction: column;
   gap: 5px;
   color: #808080;
+
+  font-size: 13px;
+  line-height: 16px;
 }
 
 main#seats #details > .content > #travel #ticket > div {
@@ -1725,12 +1811,20 @@ main#seats #details > .content > #travel #ticket > div {
 main#seats #details > .content > #travel #ticket > div:last-of-type {
   color: #4D4D4D;
   margin-top: 5px;
+  font-weight: 600;
+}
+
+main#seats #details > .content > #travel #choosen {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 main#seats #details > .content > #travel #choosen > div:first-of-type {
   color: #C98010;
-  font-size: 29px;
-  line-height: 35px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
@@ -1739,7 +1833,7 @@ main#seats #details > .content > #travel #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  row-gap: 1em;
+  row-gap: 0.5em;
 }
 
 main#seats #details > .content > #travel #choosen > div.infos > div.towns {
@@ -1748,9 +1842,9 @@ main#seats #details > .content > #travel #choosen > div.infos > div.towns {
   grid-row-start: 1;
   grid-row-end: 2;
 
-  font-size: 23px;
-  font-weight: bold;
-  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12px;
   color: #4D4D4D;
 }
 
@@ -1760,8 +1854,8 @@ main#seats #details > .content > #travel #choosen > div.infos > div.date-seats {
   grid-row-start: 2;
   grid-row-end: 3;
 
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 13px;
+  line-height: 16px;
   color: #808080;
 }
 
@@ -1771,9 +1865,9 @@ main#seats #details > .content > #travel #choosen > div.infos > div.agency {
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
 }
 
@@ -1783,9 +1877,9 @@ main#seats #details > .content > #travel #choosen > div.infos > div.hour {
   grid-row-start: 1;
   grid-row-end: 3;
 
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 54px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
   color: #C98010;
   text-align: right;
 }
@@ -1796,9 +1890,9 @@ main#seats #details > .content > #travel #choosen > div.infos > div.class {
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
   text-align: right;
 }
@@ -1812,8 +1906,9 @@ main#seats #details > .content > #seat-selection > div:first-of-type {
 
 main#seats #details > .content > #seat-selection > div:first-of-type > div:first-of-type {
   color: #808080;
-  font-size: 20px;
-  line-height: 24px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 main#seats #details > .content > #seat-selection > div:first-of-type > .selections {
@@ -1842,8 +1937,9 @@ main#seats #details > .content > #seat-selection .legend > div {
 }
 
 main#seats #details > .content > #seat-selection .legend > div span {
-  font-size: 28px;
-  line-height: 33px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
   color: #B2B2B2;
 }
 
@@ -1857,10 +1953,11 @@ main#seats #details > .content > #seat-selection .rank {
 }
 
 main#seats #details > .content > #seat-selection .place {
-  width: 85px;
-  height: 85px;
-  font-size: 40px;
-  line-height: 48px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1898,47 +1995,19 @@ main#seats #details > .content > #seat-selection .nav button {
   border: none;
   outline: none;
 
-  font-size: 37px;
-  line-height: 15px;
+  font-weight: 600er;
+  font-size: 22px;
+  line-height: 9px;
 }
 
 /* INFORMATIONS ABOUT PASSENGERS */
-
-main#passenger-data #breadcumb {
-  background-color: #C98010;
-}
-
-main#passenger-data #breadcumb > .content {
-  width: 75%;
-  margin: auto;
-  padding: 1em 0;
-}
-
-main#passenger-data #breadcumb > .content ul {
-  list-style: none;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1em;
-}
-
-main#passenger-data #breadcumb > .content ul li {
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 15px;
-}
-
-main#passenger-data #breadcumb > .content ul li img {
-  filter: invert(99%) sepia(0%) saturate(7432%) hue-rotate(179deg) brightness(121%) contrast(98%);
-}
 
 main#passenger-data #details {
   background-color: #FFFFFF;
 }
 
 main#passenger-data #details > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
 
   display: flex;
@@ -1971,8 +2040,8 @@ main#passenger-data #details > .content > #travel {
 }
 
 main#passenger-data #details > .content > #travel #more {
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   color: #666666;
 }
 
@@ -1981,6 +2050,9 @@ main#passenger-data #details > .content > #travel #ticket {
   flex-direction: column;
   gap: 5px;
   color: #808080;
+
+  font-size: 13px;
+  line-height: 16px;
 }
 
 main#passenger-data #details > .content > #travel #ticket > div {
@@ -1996,9 +2068,9 @@ main#passenger-data #details > .content > #travel #ticket > div:last-of-type {
 
 main#passenger-data #details > .content > #travel #choosen > div:first-of-type {
   color: #C98010;
-  font-size: 29px;
-  font-weight: bold;
-  line-height: 35px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
@@ -2007,7 +2079,7 @@ main#passenger-data #details > .content > #travel #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  row-gap: 1em;
+  row-gap: 0.5em;
 }
 
 main#passenger-data #details > .content > #travel #choosen > div.infos > div.towns {
@@ -2016,9 +2088,9 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.tow
   grid-row-start: 1;
   grid-row-end: 2;
 
-  font-size: 23px;
-  font-weight: bold;
-  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12px;
   color: #4D4D4D;
 }
 
@@ -2028,8 +2100,8 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.dat
   grid-row-start: 2;
   grid-row-end: 3;
 
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 13px;
+  line-height: 16px;
   color: #808080;
 }
 
@@ -2039,9 +2111,9 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.age
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
 }
 
@@ -2051,9 +2123,9 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.hou
   grid-row-start: 1;
   grid-row-end: 3;
 
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 54px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
   color: #C98010;
   text-align: right;
 }
@@ -2064,9 +2136,9 @@ main#passenger-data #details > .content > #travel #choosen > div.infos > div.cla
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
   text-align: right;
 }
@@ -2119,8 +2191,9 @@ main#passenger-data #details > .content > #informations form fieldset .input inp
   background-color: #E5E5E5;
   padding: 1.5em;
 
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 500;
 
   color: #B2B2B2;
 
@@ -2155,6 +2228,8 @@ main#passenger-data #details > .content > #informations form .actions {
 
 main#passenger-data #details > .content > #informations form .actions > div:first-of-type {
   margin: 2em 0;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 main#passenger-data #details > .content > #informations form .actions > div:first-of-type a {
@@ -2162,10 +2237,11 @@ main#passenger-data #details > .content > #informations form .actions > div:firs
 }
 
 main#passenger-data #details > .content > #informations form .actions button {
-  width: 70%;
-  padding: 0.5em;
-  font-size: 26px;
-  line-height: 40px;
+  padding: 1em 2em;
+  width: 80%;
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: 700;
   border: none;
   outline: none;
   color: white;
@@ -2184,41 +2260,12 @@ main#passenger-data #details > .content > #informations form .actions div {
 
 /* RESUME AND PAYMENT */
 
-main#resume #breadcumb {
-  background-color: #C98010;
-}
-
-main#resume #breadcumb > .content {
-  width: 75%;
-  margin: auto;
-  padding: 1em 0;
-}
-
-main#resume #breadcumb > .content ul {
-  list-style: none;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1em;
-}
-
-main#resume #breadcumb > .content ul li {
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 15px;
-}
-
-main#resume #breadcumb > .content ul li img {
-  filter: invert(99%) sepia(0%) saturate(7432%) hue-rotate(179deg) brightness(121%) contrast(98%);
-}
-
 main#resume #details {
   background-color: #FFFFFF;
 }
 
 main#resume #details > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
 
   display: flex;
@@ -2252,6 +2299,9 @@ main#resume #details > .content > div:first-of-type > #ticket {
   flex-direction: column;
   gap: 5px;
   color: #808080;
+
+  font-size: 13px;
+  line-height: 16px;
 }
 
 main#resume #details > .content > div:first-of-type > #ticket > div {
@@ -2263,6 +2313,7 @@ main#resume #details > .content > div:first-of-type > #ticket > div {
 main#resume #details > .content > div:first-of-type > #ticket > div:last-of-type {
   color: #4D4D4D;
   margin-top: 5px;
+  font-weight: 600;
 }
 
 main#resume #details > .content > div:first-of-type > #coords > div:first-of-type,
@@ -2270,7 +2321,6 @@ main#resume #details > .content > div:first-of-type > #choosen > div:first-of-ty
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 0.5em;
 }
 
 main#resume #details > .content > div:first-of-type > #reduction > div:first-of-type,
@@ -2278,23 +2328,25 @@ main#resume #details > .content > div:first-of-type > #method-payment > div:firs
 main#resume #details > .content > div:first-of-type > #method-payment > div:first-of-type,
 main#resume #details > .content > div:first-of-type > #coords > div:first-of-type > div:first-of-type {
   color: #808080;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
 }
 
 main#resume #details > .content > div:first-of-type > #choosen > div:first-of-type > div:first-of-type {
   color: #C98010;
-  font-size: 29px;
-  line-height: 35px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
 main#resume #details > .content > div:first-of-type > #coords > div:first-of-type a,
 main#resume #details > .content > div:first-of-type > #choosen > div:first-of-type a {
   color: #C98010;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
 
   display: flex;
   align-items: center;
@@ -2309,7 +2361,7 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  row-gap: 1em;
+  row-gap: 0.5em;
 }
 
 main#resume #details > .content > div:first-of-type > #choosen > div.infos > div.towns {
@@ -2318,9 +2370,9 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-start: 1;
   grid-row-end: 2;
 
-  font-size: 23px;
-  font-weight: bold;
-  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12px;
   color: #4D4D4D;
 }
 
@@ -2330,8 +2382,8 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-start: 2;
   grid-row-end: 3;
 
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 13px;
+  line-height: 16px;
   color: #808080;
 }
 
@@ -2341,9 +2393,9 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
 }
 
@@ -2353,9 +2405,9 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-start: 1;
   grid-row-end: 3;
 
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 54px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
   color: #C98010;
   text-align: right;
 }
@@ -2366,9 +2418,9 @@ main#resume #details > .content > div:first-of-type > #choosen > div.infos > div
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
   text-align: right;
 }
@@ -2394,9 +2446,9 @@ main#resume #details > .content > div:first-of-type > #coords > div:last-of-type
   flex-direction: column;
   gap: 0.5em;
 
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 28px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   color: #4D4D4D;
 }
 
@@ -2405,6 +2457,7 @@ main#resume #details > .content > div:first-of-type > #actions,
 main#resume #details > .content > div:first-of-type > #method-payment {
   background: none;
   border: 1px solid #B2B2B2;
+  border-color: transparent;
 }
 
 main#resume #details > .content > div:first-of-type > #reduction > div:first-of-type,
@@ -2427,23 +2480,23 @@ main#resume #details > .content > div:first-of-type > #method-payment > div:last
 }
 
 main#resume #details > .content > div:first-of-type > #method-payment > div:last-of-type > div:nth-child(1) img {
-  width: 92px;
-  height: 65px;
+  width: 55px;
+  height: 39px;
 }
 
 main#resume #details > .content > div:first-of-type > #method-payment > div:last-of-type > div:nth-child(2) img {
-  width: 92px;
-  height: 65px;
+  width: 55px;
+  height: 39px;
 }
 
 main#resume #details > .content > div:first-of-type > #method-payment > div:last-of-type > div:nth-child(3) img {
-  width: 120px;
-  height: 65px;
+  width: 72px;
+  height: 39px;
 }
 
 main#resume #details > .content > div:first-of-type > #method-payment > div:last-of-type > div:nth-child(4) img {
-  width: 120px;
-  height: 65px;
+  width: 72px;
+  height: 39px;
 }
 
 main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form {
@@ -2451,6 +2504,10 @@ main#resume #details > .content > div:first-of-type > #reduction > div:last-of-t
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form .input {
+  width: 50%;
 }
 
 main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form .input input {
@@ -2461,10 +2518,12 @@ main#resume #details > .content > div:first-of-type > #reduction > div:last-of-t
   padding-left: 1em;
   background-color: #E5E5E5;
   padding: 1.5em;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 17px;
+  line-height: 15px;
+  font-weight: 600;
   color: #B2B2B2;
   width: 100%;
+  height: 60px;
 }
 
 main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form button {
@@ -2475,10 +2534,12 @@ main#resume #details > .content > div:first-of-type > #reduction > div:last-of-t
   padding-left: 1em;
   background-color: #666666;
   padding: 1.5em 4em;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 17px;
+  line-height: 15px;
+  font-weight: 600;
   color: #FFFFFF;
   width: 100%;
+  height: 60px;
 }
 
 main#resume #details > .content > div:first-of-type > #actions {
@@ -2495,57 +2556,29 @@ main#resume #details > .content > div:first-of-type > #actions {
 
 main#resume #details > .content > div:first-of-type > #actions button {
   width: 80%;
-  padding: 1.5em;
   text-transform: uppercase;
-  font-size: 22px;
-  line-height: 15px;
+  font-size: 13px;
+  line-height: 9px;
+  font-weight: 700;
+  padding: 2em;
   color: #FFFFFF;
   border: none;
   background-image: linear-gradient(#C98018, #C98018);
 }
 
 main#resume #details > .content > div:first-of-type > #actions p {
-  font-size: 19px;
-  line-height: 22px;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 /* RESUME AND PAYMENT - 2 */
-
-main#resume-2 #breadcumb {
-  background-color: #C98010;
-}
-
-main#resume-2 #breadcumb > .content {
-  width: 75%;
-  margin: auto;
-  padding: 1em 0;
-}
-
-main#resume-2 #breadcumb > .content ul {
-  list-style: none;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1em;
-}
-
-main#resume-2 #breadcumb > .content ul li {
-  color: #FFFFFF;
-  font-size: 22px;
-  line-height: 15px;
-}
-
-main#resume-2 #breadcumb > .content ul li img {
-  filter: invert(99%) sepia(0%) saturate(7432%) hue-rotate(179deg) brightness(121%) contrast(98%);
-}
 
 main#resume-2 #details {
   background-color: #FFFFFF;
 }
 
 main#resume-2 #details > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
 
   display: flex;
@@ -2567,6 +2600,9 @@ main#resume-2 #details > .content > div.recap > #ticket {
   flex-direction: column;
   gap: 5px;
   color: #808080;
+
+  font-size: 13px;
+  line-height: 16px;
 }
 
 main#resume-2 #details > .content > div.recap > #ticket > div {
@@ -2578,7 +2614,7 @@ main#resume-2 #details > .content > div.recap > #ticket > div {
 main#resume-2 #details > .content > div.recap > #ticket > div:last-of-type {
   color: #4D4D4D;
   margin-top: 5px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 main#resume-2 #details > .content > div.recap > #coords > div:first-of-type,
@@ -2586,8 +2622,8 @@ main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 0.5em;
-  font-weight: bold;
+  align-items: center;
+  font-weight: 600;
 }
 
 main#resume-2 #details > .content > div.recap > #reduction > div:first-of-type,
@@ -2595,23 +2631,25 @@ main#resume-2 #details > .content > div.recap > #method-payment > div:first-of-t
 main#resume-2 #details > .content > div.recap > #method-payment > div:first-of-type,
 main#resume-2 #details > .content > div.recap > #coords > div:first-of-type > div:first-of-type {
   color: #808080;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
 }
 
 main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type > div:first-of-type {
   color: #C98010;
-  font-size: 29px;
-  line-height: 35px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
 main#resume-2 #details > .content > div.recap > #coords > div:first-of-type a,
 main#resume-2 #details > .content > div.recap > #choosen > div:first-of-type a {
   color: #C98010;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
 
   display: flex;
   align-items: center;
@@ -2626,7 +2664,7 @@ main#resume-2 #details > .content > div.recap > #choosen > div.infos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  row-gap: 1em;
+  row-gap: 0.5em;
 }
 
 main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.towns {
@@ -2635,9 +2673,9 @@ main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.towns
   grid-row-start: 1;
   grid-row-end: 2;
 
-  font-size: 23px;
-  font-weight: bold;
-  line-height: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 12px;
   color: #4D4D4D;
 }
 
@@ -2647,8 +2685,8 @@ main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.date-
   grid-row-start: 2;
   grid-row-end: 3;
 
-  font-size: 23px;
-  line-height: 28px;
+  font-size: 13px;
+  line-height: 16px;
   color: #808080;
 }
 
@@ -2658,9 +2696,9 @@ main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.agenc
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
 }
 
@@ -2670,9 +2708,9 @@ main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.hour 
   grid-row-start: 1;
   grid-row-end: 3;
 
-  font-size: 45px;
-  font-weight: bold;
-  line-height: 54px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: 600;
   color: #C98010;
   text-align: right;
 }
@@ -2683,9 +2721,9 @@ main#resume-2 #details > .content > div.recap > #choosen > div.infos > div.class
   grid-row-start: 3;
   grid-row-end: 4;
 
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
   color: #808080;
   text-align: right;
 }
@@ -2711,9 +2749,9 @@ main#resume-2 #details > .content > div.recap > #coords > div:last-of-type {
   flex-direction: column;
   gap: 0.5em;
 
-  font-weight: bold;
-  font-size: 23px;
-  line-height: 28px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   color: #4D4D4D;
 }
 
@@ -2802,10 +2840,10 @@ main#resume-2 #details > .content > div.card header {
   justify-content: end;
   padding-bottom: 1em;
   color: #FFFFFF;
-  font-size: 36px;
-  font-weight: bolder;
-  line-height: 76px;
-  height: 400px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 45px;
+  height: 240px;
 }
 
 main#resume-2 #details > .content > div.card form {
@@ -2841,8 +2879,9 @@ main#resume-2 #details > .content > div.card form fieldset .input input {
   background-color: #E5E5E5;
   padding: 1.5em;
 
-  font-size: 21px;
-  line-height: 26px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
 
   color: #B2B2B2;
 
@@ -2861,7 +2900,6 @@ main#resume-2 #details > .content > div.card form fieldset .group .input {
 }
 
 main#resume-2 #details > .content > div.card form .actions {
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2870,14 +2908,15 @@ main#resume-2 #details > .content > div.card form .actions {
 }
 
 main#resume-2 #details > .content > div.card form .actions button {
-  padding: 1em 2em;
-  font-size: 32px;
-  font-weight: bolder;
-  line-height: 48px;
   border: none;
   outline: none;
   color: white;
   background: linear-gradient(#C98018, #C98010);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 8px;
+  padding: 2em;
+  width: 65%;
 }
 
 main#resume-2 #details > .content > div.card form .actions button span {
@@ -2940,7 +2979,7 @@ main#details-ticket > .content > .ticket >  .title {
   text-align: center;
   padding: 1em 0;
   font-size: 43px;
-  font-weight: bolder;
+  font-weight: 600er;
   line-height: 66px;
   margin: 2px;
 }
@@ -2954,7 +2993,7 @@ main#details-ticket > .content > .ticket >  .infos {
 main#details-ticket > .content > .ticket >  .infos .name {
   padding: 0 2em;
   font-size: 58px;
-  font-weight: bolder;
+  font-weight: 600er;
   line-height: 88px;
   color: #C98010;
   text-align: center;
@@ -2968,7 +3007,7 @@ main#details-ticket > .content > .ticket >  .infos .others {
   padding: 0 2em;
   width: 80%;
   margin: auto;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 main#details-ticket > .content > .ticket >  .infos .others > div {
@@ -3104,7 +3143,7 @@ main#details-ticket > .content > .ticket >  .scan .agency {
   gap: 1em;
 
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 20px;
 }
 
