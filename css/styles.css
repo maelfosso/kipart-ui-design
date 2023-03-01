@@ -188,13 +188,19 @@ input[type=date]::-webkit-calendar-picker-indicator {
   -webkit-appearance: none;
 }
 
+.w-15 {
+  width: 15%;
+}
+
 header nav,
 footer article:first-child > .content,
 footer article:last-child > .content,
 main#homepage #hero > .content,
 main#homepage #agencies > .content,
 main#homepage #app > .content,
-main#homepage #newsletter > .content {
+main#homepage #newsletter > .content,
+main#departures #search > .content,
+main#departures #details > .content {
   max-width: 1280px;
   margin: auto;
 }
@@ -469,13 +475,13 @@ main#homepage #newsletter > .content > form {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  height: 60px;
   width: 85%;
 }
 
 main#homepage #newsletter > .content > form > .input {
   position: relative;
   flex: 70%;
+  height: 60px;
 }
 
 main#homepage #newsletter > .content > form > .input > img {
@@ -516,6 +522,7 @@ main#homepage #newsletter > .content > form > .input input::placeholder { /* Chr
 
 main#homepage #newsletter > .content > form > button {
   flex: 30%;
+  height: 60px;
 
   background-color: #C98010;
   color: #FFFFFF;
@@ -997,7 +1004,7 @@ main#departures #search {
 }
 
 main#departures #search > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
 }
 
@@ -1011,9 +1018,12 @@ main#departures #search > .content > form {
   gap: 1em;
 }
 
-main#departures #search > .content > form * {
-  font-size: 18px;
-  line-height: 22px;
+main#departures #search > .content > form .input,
+main#departures #search > .content > form .group {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 11px;
+  height: 55px;
 }
 
 main#departures #search > .content > form input,
@@ -1044,8 +1054,8 @@ main#departures #search > .content > form .input.right > :last-child {
 }
 
 main#departures #search > .content > form img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   filter: invert(28%) sepia(0%) saturate(184%) hue-rotate(227deg) brightness(91%) contrast(81%);
 }
 
@@ -1055,12 +1065,14 @@ main#departures #search > .content > form img.colored {
 
 main#departures #search > .content > form .input.left > :first-child {
   position: absolute;
-  left: 1em;
-  top: 1em;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  margin-left: 10px;
 }
 
 main#departures #search > .content > form .input.left input {
-  padding-left: 4em;
+  padding-left: 3em;
 }
 
 main#departures #search > .content > form > .input.select select {
@@ -1079,7 +1091,7 @@ main#departures #search > .content > form input {
 main#departures #search > .content > form input,
 main#departures #search > .content > form .group .input button {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
 }
 
 main#departures #search > .content > form > .group {
@@ -1104,9 +1116,10 @@ main#departures #search > .content > form > .group > div {
 
 main#departures #search > .content > form .group .input button {
   background-color: #E5E5E5;
-  padding: 0 1.5em;
+  padding: 0 10px 0 0;
   height: 100%;
   border: none;
+  border-left: 2px solid #000000;
   border-radius: 1em;
 
   cursor: pointer;
@@ -1140,7 +1153,11 @@ main#departures #search > .content > form .group > div select {
   border: none;
   border-radius: 1em;
 
-  /* height: 100%; */
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 11px;
+
+  height: 100%;
 }
 
 /* main#departures #search > .content > form .group > div {
@@ -1158,8 +1175,9 @@ main#departures #search > .content > form .actions button[type="submit"] {
   padding: 0 1.5em;
   height: 100%;
   text-transform: uppercase;
-  font-size: 22px;
-  line-height: 15px;
+  font-size: 13px;
+  font-weight: bolder;
+  line-height: 9px;
   color: #FFFFFF;
   border: none;
   background-image: linear-gradient(#C98018, #C98018);
@@ -1170,7 +1188,7 @@ main#departures #details {
 }
 
 main#departures #details > .content {
-  width: 75%;
+  width: 80%;
   margin: auto;
   padding: 2em 0;
   display: flex;
@@ -1179,8 +1197,9 @@ main#departures #details > .content {
 }
 
 main#departures #details > .content .message {
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 500;
   color: #666666;
   text-align: justify;
 }
@@ -1216,18 +1235,19 @@ main#departures #details > .content > div:last-of-type > div {
 }
 
 main#departures #details > .content #by-agencies header {
-  padding: 2em 0;
+  padding: 0.5em 0;
 
 }
 main#departures #details > .content #by-agencies header h6 {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
   color: #808080;
 }
 
 main#departures #details > .content #by-agencies .items {
   display: grid;
-  grid-template-columns: repeat(4, minmax(123px, 1fr));
-  grid-template-rows: repeat(2, 142px);
+  grid-template-rows: repeat(2, 100px);
   grid-template-columns: repeat(4, auto);
   justify-content: space-between;
 }
@@ -1243,9 +1263,11 @@ main#departures #details > .content #by-agencies .items .item {
 
 main#departures #details > .content #by-agencies .items .item .logo {
   background-color: #989898;
-  width: 123px;
-  height: 123px;
-  font-size: 22px;
+  width: 75px;
+  height: 75px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
   text-align: center;
   display: flex;
   align-items: center;
@@ -1275,7 +1297,9 @@ main#departures #details > .content #all-departures {
 main#departures #details > .content #all-departures header {
   margin-bottom: 2em;
 
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
   color: #808080;
 
   display: flex;
@@ -1283,12 +1307,20 @@ main#departures #details > .content #all-departures header {
   justify-content: space-between;
 }
 
+main#departures #details > .content #all-departures header > div {
+  font-weight: 500;
+}
+
 main#departures #details > .content #all-departures header h6 {
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 main#departures #details > .content #all-departures header select {
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
   color: inherit;
   border: none;
   outline: none;
@@ -1318,7 +1350,7 @@ main#departures #details > .content #all-departures .items .item .infos {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.3em;
 }
 
 main#departures #details > .content #all-departures .items .item .price {
@@ -1334,15 +1366,27 @@ main#departures #details > .content #all-departures .items .item .price {
 }
 
 main#departures #details > .content #all-departures .items .item .price span:first-of-type {
-  font-size: 43px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 31px;
 }
 
 main#departures #details > .content #all-departures .items .item .price span:last-of-type {
-  font-size: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+main#departures #details > .content #all-departures .items .item .header > div:first-of-type {
+  font-weight: 200;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 main#departures #details > .content #all-departures .items .item .header .name {
-  font-size: 26px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 19px;
   color: #C98010;
 }
 
@@ -1354,7 +1398,9 @@ main#departures #details > .content #all-departures .items .item .body {
 }
 
 main#departures #details > .content #all-departures .items .item .body .hour {
-  font-size: 45px;
+  font-size: 27px;
+  line-height: 32px;
+  font-weight: bold;
   color: #C98010;
 }
 
@@ -1363,6 +1409,10 @@ main#departures #details > .content #all-departures .items .item .body .others {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 1em;
+
+  font-size: 10px;
+  line-height: 21px;
+  font-weight: 200;
 }
 
 main#departures #details > .content #all-departures .items .item .body .others > div:first-of-type {
@@ -1382,7 +1432,9 @@ main#departures #details > .content #all-departures .items .item .body .others >
 main#departures #details > .content #all-departures .items .item .body .type-of-car,
 main#departures #details > .content #all-departures .items .item .body .class,
 main#departures #details > .content #all-departures .items .item .body .seats {
-  font-size: 22px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
   color: #C98010;
 }
 
@@ -1397,6 +1449,11 @@ main#departures #details > .content #all-departures .items .item .footer .fa-sol
 }
 
 main#departures #details > .content #all-departures .items .item .footer a {
+  font-size: 10px;
+  line-height: 21px;
+  font-weight: 200;
+  font-style: italic;
+
   text-decoration: none;
   color: inherit;
 }
