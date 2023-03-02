@@ -1,5 +1,5 @@
 /* NAV */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
   header nav {
     width: 90%;
   }
@@ -359,6 +359,18 @@
 }
 
 /* CHOICE OF SEATS */
+@media screen and (max-width: 1080px) {
+  main #breadcumb > .content {
+    width: 90%;
+    margin: auto;
+    padding: 1em 0;
+  }
+
+  main#seats #details > .content {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 465px) {
 
   main#seats #breadcumb > .content ul {
@@ -441,6 +453,11 @@
 }
 
 /* INFORMATIONS ABOUT PASSENGERS */
+@media screen and (max-width: 1080px) {
+  main#passenger-data #details > .content {
+    width: 90%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   main#passenger-data #details > .content > #informations form .actions {
@@ -492,6 +509,12 @@
 }
 
 /* RESUME AND PAYMENT */
+@media screen and (max-width: 1080px) {
+  main#resume #details > .content {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form {
     flex-direction: column;
@@ -517,6 +540,10 @@
   main#resume #details > .content > div:first-of-type > #ticket,
   main#resume #details > .content > div:first-of-type > #choosen {
     padding: 1em;
+  }
+
+  main#resume #details > .content > div:first-of-type > #reduction > div:last-of-type form .input {
+    width: 100%;
   }
 }
 
@@ -548,6 +575,12 @@
 }
 
 /* RESUME AND PAYMENT - 2 */
+@media screen and (max-width: 1080px) {
+  main#resume-2 #details > .content {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   main#resume-2 #details > .content, main#resume-2 #breadcumb > .content {
     flex-direction: column-reverse;
@@ -602,7 +635,12 @@
 
 /* DEPARTURES */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1080px) {
+  main#departures #search > .content,
+  main#departures #details > .content {
+    width: 90%;
+  }
+
   main#departures #search > .content > form .input {
     flex: 100%;
   }
@@ -643,7 +681,11 @@
 
 @media screen and (max-width: 775px) {
   main#departures #search > .content > form > .group {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  main#departures #search > .content > form > .group > div {
+    width: 50%;
   }
 
   main#departures #search > .content > form .group > div select {

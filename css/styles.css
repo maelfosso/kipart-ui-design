@@ -1254,6 +1254,7 @@ main#departures #search > .content > form .group > div select {
   background-color: #E5E5E5;
   padding: 1.5em;
   border: none;
+  outline: none;
   border-radius: 1em;
 
   font-size: 12px;
