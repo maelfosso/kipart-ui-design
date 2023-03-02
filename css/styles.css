@@ -259,7 +259,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 .w-15 {
-  width: 15%;
+  width: 15% !important;
 }
 
 .dialog-content,
@@ -878,7 +878,7 @@ main#homepage #hero > .content article:first-of-type > form {
 }
 
 main#homepage #hero > .content article:first-of-type > form * {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   line-height: 11px;
 }
@@ -907,6 +907,8 @@ main#homepage #hero > .content article:first-of-type > form label img {
 
 main#homepage #hero > .content article:first-of-type > form .input {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 main#homepage #hero > .content article:first-of-type > form .input.right > :last-child {
@@ -928,7 +930,9 @@ main#homepage #hero > .content article:first-of-type > form img.colored {
 main#homepage #hero > .content article:first-of-type > form .input.left > :first-child {
   position: absolute;
   left: 1em;
-  top: 1em;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 main#homepage #hero > .content article:first-of-type > form .input.left input {
@@ -1098,14 +1102,19 @@ main#departures #search > .content > form {
   display: flex;
   flex-direction: row;
   gap: 1em;
+
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 500;
 }
 
 main#departures #search > .content > form .input,
 main#departures #search > .content > form .group {
-  font-size: 10px;
+  /* font-size: 10px;
   font-weight: 500;
-  line-height: 11px;
+  line-height: 11px; */
   height: 55px;
+  flex: 50%;
 }
 
 main#departures #search > .content > form input,
@@ -1154,7 +1163,7 @@ main#departures #search > .content > form .input.left > :first-child {
 }
 
 main#departures #search > .content > form .input.left input {
-  padding-left: 3em;
+  padding-left: 4em;
 }
 
 main#departures #search > .content > form > .input.select select {
@@ -1168,6 +1177,10 @@ main#departures #search > .content > form input {
   border: none;
   background-color: #E5E5E5;
   padding: 1.5em;
+
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 500;
 }
 
 main#departures #search > .content > form input,
@@ -1184,6 +1197,12 @@ main#departures #search > .content > form > .group {
 main#departures #search > .content > form > .group div:first-of-type input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+main#departures #search > .content > form > .group div:first-of-type input#number-of-passengers {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
 }
 
 main#departures #search > .content > form > .group div:last-of-type button,
@@ -1235,11 +1254,12 @@ main#departures #search > .content > form .group > div select {
   border: none;
   border-radius: 1em;
 
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   line-height: 11px;
 
   height: 100%;
+  width: 100%;
 }
 
 /* main#departures #search > .content > form .group > div {
@@ -1459,6 +1479,10 @@ main#departures #details > .content #all-departures .items .item .price span:las
   line-height: 18px;
 }
 
+main#departures #details > .content #all-departures .items .item .infos .header > div:first-of-type {
+  font-weight: 500;
+}
+
 main#departures #details > .content #all-departures .items .item .header > div:first-of-type {
   font-weight: 200;
   font-size: 11px;
@@ -1507,7 +1531,7 @@ main#departures #details > .content #all-departures .items .item .body .others >
 main#departures #details > .content #all-departures .items .item .body .others > div {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   gap: 2em;
 }
 
@@ -1821,6 +1845,7 @@ main#seats #details > .content > #travel {
 }
 
 main#seats #details > .content > #travel #more {
+  text-align: justify;
   font-size: 12px;
   line-height: 14px;
   color: #666666;
