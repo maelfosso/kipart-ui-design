@@ -262,6 +262,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 15%;
 }
 
+.dialog-content,
 header nav,
 footer article:first-child > .content,
 footer article:last-child > .content,
@@ -281,6 +282,7 @@ main#privacy-policy > header .content,
 main#terms > .content,
 main#privacy-policy > .content {
   max-width: 1280px;
+  width: 100%;
   margin: auto;
 }
 
@@ -1543,7 +1545,7 @@ main#departures #details > .content #all-departures .items .item .footer a {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 75%;
+  width: 80%;
 }
 
 #login .content > button,
@@ -1565,11 +1567,14 @@ main#departures #details > .content #all-departures .items .item .footer a {
 
 #login .content > .dialog-content,
 #register .content > .dialog-content {
+  width: 100%;
   display: flex;
 }
 
 #login .content .details,
 #register .content .details {
+  flex: 50%;
+
   background-color: #FFFFFF;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
@@ -1599,11 +1604,12 @@ main#departures #details > .content #all-departures .items .item .footer a {
 
 #login .content .details form fieldset .title,
 #register .content .details form fieldset .title {
-  font-size: 18px;
-  line-height: 22px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
   color: #C98010;
 
-  width: 75%;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
@@ -1622,24 +1628,29 @@ main#departures #details > .content #all-departures .items .item .footer a {
   padding-left: 1em;
 
   background-color: #E5E5E5;
-  padding: 1.5em;
-
-  font-size: 21px;
-  line-height: 26px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 1em;
 
   color: #B2B2B2;
 
   width: 100%;
 }
 
-#login .content .details form fieldset .input img,
-#register .content .details form fieldset .input img {
+#login .content .details form fieldset .input button,
+#register .content .details form fieldset .input button {
   height: 25px;
   width: 45px;
   
   position: absolute;
+  background: none;
+  border: none;
+  outline: none;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   right: 1em;
-  top: 33px;
   z-index: 1000;
 }
 
@@ -1648,25 +1659,40 @@ main#departures #details > .content #all-departures .items .item .footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+#login .content .details form fieldset .group > div,
+#register .content .details form fieldset .group > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 #login .content .details form .actions,
 #register .content .details form .actions {
-  width: 75%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
 }
 
 #login .content .details form .actions button,
 #register .content .details form .actions button {
-  width: 70%;
-  padding: 0.5em;
-  font-size: 26px;
-  line-height: 40px;
+  width: 80%;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 8px;
+  padding: 2em;
   border: none;
   outline: none;
   color: white;
@@ -1682,13 +1708,21 @@ main#departures #details > .content #all-departures .items .item .footer a {
   color: #808080;
   text-align: center;
   width: 75%;
+
+  width: 100%;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
 }
 
 
 #login .content .advert,
 #register .content .advert {
-  font-size: 32px;
-  line-height: 38px;
+  flex: 50%;
+
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 22px;
   color: #FFFFFF;
   background: linear-gradient(#C98018, #000000);
   display: flex;
@@ -1709,7 +1743,7 @@ main#departures #details > .content #all-departures .items .item .footer a {
 
 #login .content .advert > div,
 #register .content .advert > div {
-  width: 50%;
+  width: 45%;
   margin: 1em auto;
   text-align: center;
 }
