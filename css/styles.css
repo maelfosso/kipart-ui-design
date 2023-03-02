@@ -28,14 +28,14 @@
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 600er;
+  font-weight: 600;
   font-style: normal;
   src: url('fonts/poppins/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
   font-family: "Poppins";
-  font-weight: 600er;
+  font-weight: 600;
   font-style: italic;
   src: url('fonts/poppins/Poppins-ExtraBoldItalic.ttf');
 }
@@ -532,13 +532,14 @@ main#homepage #newsletter > .content > header .section-title {
   font-size: 12px;
   font-weight: 500;
   line-height: 22px;
+  color: #666666;
 }
 
 main#homepage #newsletter > .content > header h2 {
   font-size: 38px;
   line-height: 45px;
   letter-spacing: 0.15px;
-  font-weight: 600er;
+  font-weight: 600;
   text-align: center;
 
   color: #C98010;
@@ -775,7 +776,7 @@ main#homepage #app > .content > article:last-child {
 main#homepage #app > .content > article:last-child h2 {
   font-size: 35px;
   line-height: 36px;
-  font-weight: 600er;
+  font-weight: 600;
   color: #C98010;
 }
 
@@ -1016,7 +1017,7 @@ main#homepage #hero > .content article:first-of-type > form .actions button[type
   padding: 1em;
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 600er;
+  font-weight: 600;
   line-height: 15px;
   color: #FFFFFF;
   border: none;
@@ -1279,7 +1280,7 @@ main#departures #search > .content > form .actions button[type="submit"] {
   height: 100%;
   text-transform: uppercase;
   font-size: 13px;
-  font-weight: 600er;
+  font-weight: 600;
   line-height: 9px;
   color: #FFFFFF;
   border: none;
@@ -2055,7 +2056,7 @@ main#seats #details > .content > #seat-selection .nav button {
   border: none;
   outline: none;
 
-  font-weight: 600er;
+  font-weight: 600;
   font-size: 22px;
   line-height: 9px;
 }
@@ -3039,7 +3040,7 @@ main#details-ticket > .content > .ticket >  .title {
   text-align: center;
   padding: 1em 0;
   font-size: 43px;
-  font-weight: 600er;
+  font-weight: 600;
   line-height: 66px;
   margin: 2px;
 }
@@ -3053,7 +3054,7 @@ main#details-ticket > .content > .ticket >  .infos {
 main#details-ticket > .content > .ticket >  .infos .name {
   padding: 0 2em;
   font-size: 58px;
-  font-weight: 600er;
+  font-weight: 600;
   line-height: 88px;
   color: #C98010;
   text-align: center;

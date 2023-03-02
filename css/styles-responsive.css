@@ -1,8 +1,11 @@
 /* NAV */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   header nav {
     width: 90%;
   }
+}
+
+@media screen and (max-width: 768px) {
 
   header nav ul {
     display: none;
@@ -186,6 +189,11 @@
 /* HOME  */
 
 @media screen and (max-width: 1024px) {
+  main#homepage #hero > .content, main#homepage #agencies > .content, main#homepage #app > .content, main#homepage #newsletter > .content {
+    width: 90%;
+    margin: auto;
+  }
+
   main#homepage #hero {
     background-image: url(../images/bg-header.png);
     background-size: cover;
@@ -212,10 +220,6 @@
     top: 0;
     right: 0;
     bottom: 0;
-  }
-
-  main#homepage #agencies > .content {
-    flex-direction: column;
   }
 
   main#homepage #agencies > .content article {
@@ -300,6 +304,7 @@
 
   main#homepage #app > .content > article:last-child div ul {
     width: 100%;
+    height: auto;
   }
 
   main#homepage #app > .content > article:last-child div ul:first-child li {
@@ -330,6 +335,7 @@
   main#homepage #newsletter > .content > form > .input input,
   main#homepage #newsletter > .content > form > button {
     height: 90px;
+    flex: auto;
   }
 
   main#homepage #hero > .content article:first-of-type > form > .group {
@@ -342,6 +348,13 @@
 
   main#homepage #hero > .content {
     gap: 1em;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main#homepage #agencies > .content {
+    flex-direction: row;
   }
 }
 
