@@ -943,6 +943,7 @@ main#homepage #hero > .content article:first-of-type > form > .input.select sele
   border: none;
   outline: none;
   color: #C98010;
+  height: auto;
 }
 
 main#homepage #hero > .content article:first-of-type > form input {
